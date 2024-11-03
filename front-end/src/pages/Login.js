@@ -53,6 +53,7 @@ function Login() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  //여기에 static 값이 아닌 db내 로그인 정보 바탕 조회하는 로직 구현
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email === 'smite010@gmail.com' && password === '1234') {
